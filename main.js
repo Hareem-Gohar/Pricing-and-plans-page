@@ -11,6 +11,7 @@ allClosed.forEach(closed => {
             allClosed.forEach(otherClosed => {
                   if (otherClosed !== closed) {
                         const otherIsOpenDiv = otherClosed.nextElementSibling;
+                        // for closing other divs
                         if (!otherIsOpenDiv.classList.contains('hidden')) {
                               otherIsOpenDiv.classList.add('hidden');
                               otherClosed.querySelector('.arrow').classList.remove('rotate-180');
